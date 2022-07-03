@@ -31,7 +31,7 @@ jobs:
 
       # 의존파일 설치
       - name: npm install --fronzen-lockfile
-        run: npm build
+        run: npm run build
         
       # zip 파일 생성
       - name : zip create
