@@ -61,5 +61,5 @@ jobs:
           --application-name first-development
           --deployment-config-name CodeDeployDefault.AllAtOnce
           --deployment-group-name develop-deploy
-          --s3-location bucket=alphacircle-deploy,key=/nest.zip,bundleType=zip
+          --s3-location bucket=alphacircle-deploy,key=nest.zip,bundleType=zip
       
