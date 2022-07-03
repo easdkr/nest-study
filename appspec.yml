@@ -4,6 +4,7 @@ os: linux
 files:
   - source: /
     destination: /opt/testapp
+    overwrite: yes
 
 permissions:
   - object: /opt/testapp/
@@ -13,6 +14,6 @@ permissions:
 
 hooks:
   AfterInstall:
-    - location: deploay.sh 
+    - location: /opt/testapp/deploay.sh 
       timeout: 60
       runas: ubuntu
