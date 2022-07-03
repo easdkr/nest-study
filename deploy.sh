@@ -1,2 +1,1 @@
-echo "deploy"
-
+docker-compose up --build

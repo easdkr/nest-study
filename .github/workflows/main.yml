@@ -31,7 +31,7 @@ jobs:
 
       # 의존파일 설치
       - name: Install Dependencies
-        run: npm install --fronzen-lockfile
+        run: npm ci
         
       # Build
       - name: Build
@@ -58,8 +58,8 @@ jobs:
       
       - name: Deploy
         run: aws deploy create-deployment
-          --application-name first-development
+          --application-name cd-study
           --deployment-config-name CodeDeployDefault.AllAtOnce
-          --deployment-group-name develop-deploy
+          --deployment-group-name deploy-develop
           --s3-location bucket=alphacircle-deploy,key=nest.zip,bundleType=zip
       
