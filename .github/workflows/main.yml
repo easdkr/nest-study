@@ -30,8 +30,8 @@ jobs:
         run: node -v
 
       # 의존파일 설치
-      - name: yarn install --fronzen-lockfile
-        run: yarn build
+      - name: npm install --fronzen-lockfile
+        run: npm build
         
       # zip 파일 생성
       - name : zip create
