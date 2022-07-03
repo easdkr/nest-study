@@ -30,7 +30,11 @@ jobs:
         run: node -v
 
       # 의존파일 설치
-      - name: npm install --fronzen-lockfile
+      - name: Install Dependencies
+        run: npm install --fronzen-lockfile
+        
+      # Build
+      - name: Build
         run: npm run build
         
       # zip 파일 생성
